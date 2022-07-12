@@ -1,0 +1,23 @@
+:root {
+  /*Custom rows and columns properties, to synchronize with javascript code*/
+  --rowNum: 1;
+  --colNum: 1;
+}
+
+
+body {
+  min-height: 600px;
+  min-width: 600px;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(var(--rowNum), 1fr);
+  grid-template-columns: repeat(var(--colNum), 1fr);
+  min-height: 600px;
+  max-width: 600px;
+}
+
+.grid-item {
+  border: 1px solid black;/*div block properties*/
+}
