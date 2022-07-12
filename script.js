@@ -1,4 +1,5 @@
 const container = document.querySelector('.container');
+const square = document.querySelectorAll('.grid-item');
 
     
 function grid(row,column) {
@@ -15,10 +16,14 @@ function grid(row,column) {
             div.classList.add('grid-item');
             div.style.height = squareSize;
             div.style.width = squareSize;
+                div.addEventListener('mouseover',changeColor = () => {
+                div.style.backgroundColor = 'black';
+                    
+            });
 
 container.appendChild(div);
 }
-
 }
 
 grid(16,16);
+
